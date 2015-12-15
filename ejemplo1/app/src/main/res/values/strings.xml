@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ejemplo1</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="userLabel">Usuario</string>
+    <string name="passwdLabel">Contraseña</string>
+    <string name="userHint">Introduce DNI</string>
+    <string name="passwdHint">Introduce Password</string>
+    <string name="buttonText">ACCEDER</string>
+</resources>
