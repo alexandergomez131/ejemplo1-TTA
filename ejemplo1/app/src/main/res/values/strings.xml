@@ -2,9 +2,23 @@
     <string name="app_name">ejemplo1</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_menu">MenuActivity</string>
+
     <string name="userLabel">Usuario</string>
     <string name="passwdLabel">Contraseña</string>
     <string name="userHint">Introduce DNI</string>
     <string name="passwdHint">Introduce Password</string>
     <string name="buttonText">ACCEDER</string>
+
+    <string name="welcomeLabel">Bienvenido</string>
+    <string name="menuLabel">Lección 1: Introducción a Android</string>
+    <string name="menuButtonText1">NUEVO TEST</string>
+    <string name="menuButtonText2">NUEVO EJERCICIO</string>
+    <string name="menuButtonText3">SEGUIMIENTO</string>
+
+    <string name="testQuestion1">Pregunta:</string>
+    <string name="testAnswer1-1">respuesta 1</string>
+    <string name="testAnswer1-2">respuesta 2</string>
+    <string name="testAnswer1-3">res 3</string>
+    <string name="testAnswer1-4">vaca 4</string>
+    <string name="testAnswer1-5">pollo 5</string>
 </resources>

@@ -20,7 +20,8 @@ public class MenuActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         TextView textLogin = (TextView)findViewById(R.id.menu_login);
-        textLogin.setText(intent.getStringExtra(MainActivity.EXTRA_LOGIN));
+        String welcome = getResources().getString(R.string.welcomeLabel);
+        textLogin.setText(welcome + " " + intent.getStringExtra(MainActivity.EXTRA_LOGIN));
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -30,6 +31,11 @@ public class MenuActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    public void test(){
+        Intent intent = new Intent(this, TestActivity.class);
+        startActivity(intent);
     }
 
 }
