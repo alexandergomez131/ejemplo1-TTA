@@ -33,7 +33,7 @@ public class MenuActivity extends AppCompatActivity {
         });
     }
 
-    public void test(){
+    public void test(View view){
         Intent intent = new Intent(this, TestActivity.class);
         startActivity(intent);
     }

@@ -1,24 +1,31 @@
 <resources>
     <string name="app_name">ejemplo1</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_menu">MenuActivity</string>
 
+    <!-- Main activity-->
     <string name="userLabel">Usuario</string>
     <string name="passwdLabel">Contraseña</string>
     <string name="userHint">Introduce DNI</string>
     <string name="passwdHint">Introduce Password</string>
     <string name="buttonText">ACCEDER</string>
 
+    <string name="title_activity_menu">MenuActivity</string>
     <string name="welcomeLabel">Bienvenido</string>
     <string name="menuLabel">Lección 1: Introducción a Android</string>
     <string name="menuButtonText1">NUEVO TEST</string>
     <string name="menuButtonText2">NUEVO EJERCICIO</string>
     <string name="menuButtonText3">SEGUIMIENTO</string>
 
-    <string name="testQuestion1">Pregunta:</string>
-    <string name="testAnswer1-1">respuesta 1</string>
-    <string name="testAnswer1-2">respuesta 2</string>
-    <string name="testAnswer1-3">res 3</string>
-    <string name="testAnswer1-4">vaca 4</string>
-    <string name="testAnswer1-5">pollo 5</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="testQuestion1">¿Cuantas veces se le puede restar 1 al numero 111?</string>
+    <string name="testAnswer1y1">10</string>
+    <string name="testAnswer1y2">111</string>
+    <string name="testAnswer1y3">1</string>
+    <string name="testAnswer1y4">0</string>
+    <string name="testAnswer1y5">110</string>
+    <string name="button_send_test">ENVIAR</string>
+    <string name="button_help_test">VER AYUDA</string>
+    <string name="correct">Correcto</string>
+    <string name="incorrect">Incorrecto</string>
+
 </resources>
