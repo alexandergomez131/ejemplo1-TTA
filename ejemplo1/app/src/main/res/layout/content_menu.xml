@@ -29,9 +29,10 @@
             android:textSize="20dp"/>
 
         <TextView
+            android:id="@+id/menu_lesson"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/menuLabel"/>
+            android:gravity="center"/>
 
         <Button
             android:layout_width="match_parent"

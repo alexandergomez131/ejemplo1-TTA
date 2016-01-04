@@ -3,8 +3,11 @@ package com.example.alumno.ejemplo1;
 import android.content.Intent;
 import android.graphics.Color;
 
+import android.media.MediaPlayer;
+import android.media.audiofx.BassBoost;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -112,6 +115,7 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
                 showVideo();
                 break;
             case 4:
+                showAudio();
                 break;
         }
     }
@@ -146,5 +150,16 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
         video.setMediaController(controler);
         layout.addView(video);
         video.start();
+    }
+
+    private void showAudio(){
+
+        LinearLayout audioView = (LinearLayout)findViewById(R.id.audio_view);
+        AudioPlayer audio = new AudioPlayer(audioView, new Runnable() {
+            public void run() {
+                finish();
+            }
+        });
+        audio.setUri();
     }
 }

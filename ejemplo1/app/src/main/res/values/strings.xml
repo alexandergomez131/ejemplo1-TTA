@@ -9,14 +9,14 @@
     <string name="passwdHint">Introduce Password</string>
     <string name="buttonText">ACCEDER</string>
 
-    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_menu">Menu</string>
     <string name="welcomeLabel">Bienvenido</string>
-    <string name="menuLabel">Lección 1: Introducción a Android</string>
+    <string name="menuLabel">Lección</string>
     <string name="menuButtonText1">NUEVO TEST</string>
     <string name="menuButtonText2">NUEVO EJERCICIO</string>
     <string name="menuButtonText3">SEGUIMIENTO</string>
 
-    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_test">Nuevo Test</string>
     <string name="testQuestion1">¿Cuantas veces se le puede restar 1 al numero 111?</string>
     <string name="testAnswer1y1">10</string>
     <string name="testAnswer1y2">111</string>

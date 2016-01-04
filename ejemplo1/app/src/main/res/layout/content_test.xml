@@ -47,6 +47,14 @@
             android:text="@string/button_help_test"
             android:onClick="help"/>
 
+        <LinearLayout
+            android:id="@+id/audio_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+        </LinearLayout>
+
     </LinearLayout>
 
 </RelativeLayout>
