@@ -17,8 +17,11 @@ import java.io.IOException;
 
 public class MenuActivity extends AppCompatActivity {
 
+    public static final String EXTRA_AUTH= "com.example.alumno.passwd";
+
     private final String RestServerURL = "http://u017633.ehu.eus:18080/AlumnoTta/rest/tta";
     private final String RestUser = "getStatus?dni=";
+    private String auth;
     private TextView menuLogin;
     private TextView menuLesson;
     private JSONObject json;
@@ -40,6 +43,7 @@ public class MenuActivity extends AppCompatActivity {
             public void run() {
                 RestClient client = new RestClient(RestServerURL);
                 client.setHttpBasicAuh(intent.getStringExtra(MainActivity.EXTRA_LOGIN), intent.getStringExtra(MainActivity.EXTRA_PASSWD));
+                auth=client.getAuthorization();
                 try {
                     json = client.getJson(RestUser+intent.getStringExtra(MainActivity.EXTRA_LOGIN));
                     final String name = json.getString("user");
@@ -82,6 +86,7 @@ public class MenuActivity extends AppCompatActivity {
 
     public void test(View view){
         Intent intent = new Intent(this, TestActivity.class);
+        intent.putExtra(EXTRA_AUTH,auth);
         startActivity(intent);
     }
 
